@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, n, c, v[20];
+
+    printf("Introduceti C: ");
+    scanf("%d", &c);
+    printf("Introduceti n: ");
+    scanf("%d", &n);
+    printf("Introduceti %d elemente: ", n);
+    for (i = 0; i < n; i++)
+        scanf("%d", &v[i]);
+    for (i = 0; i < n; i++)
+        if (v[i] & 1 << c)
+            printf("%d ", v[i]);
+}
